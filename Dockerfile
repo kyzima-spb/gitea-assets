@@ -3,6 +3,8 @@ FROM node:buster-slim
 LABEL maintainer="Kirill Vercetti <office@kyzima-spb.com>"
 
 ENV DEBIAN_FRONTEND noninteractive
+ENV UID 1000
+ENV GID 1000
 
 RUN apt update
 

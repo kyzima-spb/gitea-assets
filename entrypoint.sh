@@ -24,6 +24,7 @@ then
         rm -rf /assets/*
 
         mv public/* /assets
+        chown -R $UID:$GID /assets
     popd
 
     exit 0
